@@ -1,7 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 
 const Contact = () => {
@@ -15,9 +14,8 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
+    // TODO: Integrate with backend API or email service
+    // For now, just reset the form
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -187,6 +185,7 @@ const Contact = () => {
                       <motion.a
                         key={link.name}
                         href={link.href}
+                        aria-label={link.name}
                         whileHover={{ scale: 1.1, rotate: 5 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors duration-300"

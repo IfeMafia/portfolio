@@ -44,6 +44,7 @@ const Footer = () => {
                 <motion.a
                   key={social.name}
                   href="#"
+                  aria-label={social.name}
                   whileHover={{ scale: 1.1, y: -2 }}
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300"
                 >
