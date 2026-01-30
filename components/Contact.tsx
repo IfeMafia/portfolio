@@ -73,7 +73,7 @@ const Contact = () => {
             Get in <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Touch</span>
           </h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto">
-            Have a project in mind? Let's work together to bring your ideas to life
+            Have a project in mind? Let&apos;s work together to bring your ideas to life
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

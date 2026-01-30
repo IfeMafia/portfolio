@@ -88,7 +88,7 @@ const Skills = () => {
             animate={isInView ? 'visible' : 'hidden'}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
           >
-            {skills.map((skill, index) => (
+            {skills.map((skill) => (
               <motion.div
                 key={skill.category}
                 variants={itemVariants}
